@@ -1,0 +1,37 @@
+.listaDeTarefas {
+    display: flex;
+    align-items: center;
+}
+
+.listaDeTarefas__tarefa {
+    background-color: var(--cor_fundo_formulario);
+    min-width: 50%;
+    max-width: 75%;
+    height: 3rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border-bottom: 2px solid white;
+}
+
+.listaDeTarefas__tarefa--botao {
+    padding: 0.8rem;
+}
+
+.listaDeTarefas__tarefa--botaoDoneBG:active {
+    background-color: var(--cor_verde_concluido-pressed);
+}
+
+.listaDeTarefas__tarefa--botaoCloseBG:active {
+    color: var(--cor_vermelho_exclusao);
+    background-color: var(--cor_vermelho_exclusao-pressed);
+}
+
+.listaDeTarefas__tarefa--riscado {
+    text-decoration: line-through;
+    color: var(--cor_verde_concluido);
+    border-color: var(--cor_verde_concluido);
+}
+
+.listaDeTarefas__tarefa--botaoRiscadoCorConcluido { /* Adicionado dinamicamente */
+    color: var(--cor_verde_concluido);
+}

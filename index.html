@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Lista de Tarefas</title>
+    <link rel="stylesheet" href="./assets/css/base/reset.css">
+    <link rel="stylesheet" href="./assets/css/base/base.css">
+    <link rel="stylesheet" href="./assets/css/layout/_conteudo.css">
+    <link rel="stylesheet" href="./assets/css/layout/_listaDeTarefas.css">
+    <link rel="stylesheet" href="./assets/css/mediaQuery/_mediaQuery.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main id="root">
+        <div class="conteudo" data-conteudo>
+            <h1 class="conteudo__titulo--principal">Minha Lista de Tarefas</h1>
+            <div class="conteudo__tracoHorizontal"></div>
+
+            <section class="conteudo__formulario--titulo" data-formulario_titulo>
+                <p>Escreva aqui suas tarefas</p>
+            </section>
+            <form action="" class="conteudo__formulario">
+                <input type="text" class="conteudo__formulario--input" data-formulario_textForm>
+                <input type="button" value="+" class="conteudo__formulario--botao botao" data-formulario_botaoForm>
+                <input type="button" id="botaoApagar" value="Apagar lista" class="botao">
+            </form>
+            <div class="conteudo__tarefas"></div>
+        </div>
+    </main>
+    <script src="adicionaTarefa.js"></script>
+    <script src="botoes.js"></script>
+</body>
+</html>
